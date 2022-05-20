@@ -1,0 +1,5 @@
+# Beget FileManager Auth rules
+#AuthName "Protected area, need authorization"
+#AuthType Basic
+#AuthUserFile /home/a/alenaq87/mosapartcenter.ru/public_html/administrator/.htpasswd
+#require valid-user

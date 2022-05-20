@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>Custom</name>
+	<author>Rick Deckard</author>
+	<authorEmail>info@mail.com</authorEmail>
+	<creationDate>2012-10-20</creationDate>
+	<copyright></copyright>
+	<license>GPL</license>
+	<version>1.0</version>
+	<description>Custom Component</description>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">installation/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">installation/uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<languages folder="frontend/language">
+		<language tag="en-GB">en-GB.com_custom.ini</language>
+		<language tag="ru-RU">ru-RU.com_custom.ini</language>
+	</languages>
+
+	<files folder="frontend">
+		<filename>custom.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>views</folder>
+	</files>
+
+	<media folder="media" destination="com_custom">
+		<filename>index.html</filename>
+		<folder>assets</folder>
+	</media>
+
+	<administration>
+		<menu>COM_CUSTOM_MENU</menu>
+		
+		<languages folder="administrator/language">
+			<language tag="en-GB">en-GB.com_custom.ini</language>
+			<language tag="ru-RU">ru-RU.com_custom.ini</language>
+			<language tag="en-GB">en-GB.com_custom.sys.ini</language>
+			<language tag="ru-RU">ru-RU.com_custom.sys.ini</language>
+		</languages>
+
+		<files folder="administrator">
+			<filename>changelog.php</filename>
+			<filename>custom.php</filename>
+			<filename>index.html</filename>
+			<folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>installation</folder>
+			<folder>lib</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+</extension>

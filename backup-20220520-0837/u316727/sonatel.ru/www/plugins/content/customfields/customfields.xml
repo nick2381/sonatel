@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="content">
+	<name>Content - CustomFields</name>
+	<author>Rick Deckard</author>
+	<creationDate>2013-06-19</creationDate>
+	<license>http://www.gnu.org/copyleft/lgpl.html GNU/LGPL</license>
+	<authorEmail>admin@example.com</authorEmail>
+	<authorUrl>http://localhost</authorUrl>
+	<version>2.0</version>
+	<description>Content plugin for custom fields.</description>
+	<files>
+		<filename plugin="customfields">customfields.php</filename>
+	</files>
+</extension>

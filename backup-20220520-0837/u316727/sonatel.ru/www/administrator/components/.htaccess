@@ -1,0 +1,6 @@
+# remove this config while update joomla
+
+<Files "*.php">
+    Order allow,deny 
+    Deny from all 
+</Files>
