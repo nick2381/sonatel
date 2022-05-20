@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - Custom</name>
+	<author>Rick Deckard</author>
+	<creationDate>2013-06-19</creationDate>
+	<license>http://www.gnu.org/copyleft/lgpl.html GNU/LGPL</license>
+	<authorEmail>admin@example.com</authorEmail>
+	<authorUrl>http://localhost</authorUrl>
+	<version>2.0</version>
+    <description>System plugin that loads the required Javascript and other files.</description>
+	<files>
+		<filename plugin="custom">custom.php</filename>		
+	</files>
+</extension>
